@@ -1,1 +1,146 @@
-Hello =)
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        .video-background {
+            background: #000;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -99;
+            -webkit-filter: blur(4px);
+            /* Chrome, Safari, Opera */
+            filter: blur(4px);
+        }
+
+        .video-foreground,
+        .video-background iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        #server-content {
+            top: 0;
+            color: #fff;
+        }
+
+        .srv-info {
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            height: 20%;
+            align-items: center;
+            display: block;
+
+            font-family: Impact, Charcoal, sans-serif;
+            font-size: 29px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            color: #FFFFFF;
+            font-weight: 700;
+            text-decoration: none solid rgb(68, 68, 68);
+            font-style: normal;
+            font-variant: normal;
+            text-transform: uppercase;
+            text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+            text-align: center
+        }
+
+        @media (min-aspect-ratio: 16/9) {
+            .video-foreground {
+                height: 300%;
+                top: -100%;
+            }
+        }
+
+        @media (max-aspect-ratio: 16/9) {
+            .video-foreground {
+                width: 300%;
+                left: -100%;
+            }
+        }
+
+        @media all and (max-width: 600px) {
+            .srv-info {
+                width: 50%;
+                padding: .5rem;
+            }
+
+            .srv-info h1 {
+                margin-bottom: .2rem;
+            }
+        }
+
+        @media all and (max-width: 500px) {
+            .srv-info .acronym {
+                display: none;
+            }
+        }
+    </style>
+
+    <title>
+        Example Web Page
+    </title>
+</head>
+
+<body>
+    <div class="video-background">
+        <div class="video-foreground">
+            <iframe
+                src="https://www.youtube.com/embed/wLw1PuLbsRo?start=96&mute=1&controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ"
+                frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="server-content">
+        <div class="srv-info">
+            <p id="title">FATCUP Servers</p>
+            <a href="https://www.gametracker.com/server_info/91.202.247.56:27015/" target="_blank"><img
+                    src="https://cache.gametracker.com/server_info/91.202.247.56:27015/b_560_95_1.png" border="0"
+                    width="560" height="95" alt="" /></a>
+            <a href="https://www.gametracker.com/server_info/45.147.161.23:27015/" target="_blank"><img
+                    src="https://cache.gametracker.com/server_info/45.147.161.23:27015/b_560_95_1.png" border="0"
+                    width="560" height="95" alt="" /></a>
+            <a href="https://www.gametracker.com/server_info/92.38.191.85:27015/" target="_blank"><img
+                    src="https://cache.gametracker.com/server_info/92.38.191.85:27015/b_560_95_1.png" border="0"
+                    width="560" height="95" alt="" /></a>
+            <a href="https://www.gametracker.com/server_info/91.211.116.98:27015/" target="_blank"><img
+                    src="https://cache.gametracker.com/server_info/91.211.116.98:27015/b_560_95_1.png" border="0"
+                    width="560" height="95" alt="" /></a>
+            <a href="https://www.gametracker.com/server_info/5.188.169.250:27015/" target="_blank"><img
+                    src="https://cache.gametracker.com/server_info/5.188.169.250:27015/b_560_95_1.png" border="0"
+                    width="560" height="95" alt="" /></a>
+            <a href="https://www.gametracker.com/server_info/5.188.2.31:27015/" target="_blank"><img
+                    src="https://cache.gametracker.com/server_info/5.188.2.31:27015/b_560_95_1.png" border="0"
+                    width="560" height="95" alt="" /></a>
+            <a href="https://www.gametracker.com/server_info/92.38.151.132:27015/" target="_blank"><img
+                    src="https://cache.gametracker.com/server_info/92.38.151.132:27015/b_560_95_1.png" border="0"
+                    width="560" height="95" alt="" /></a>
+            <a href="https://www.gametracker.com/server_info/92.223.115.7:27015/" target="_blank"><img
+                    src="https://cache.gametracker.com/server_info/92.223.115.7:27015/b_560_95_1.png" border="0"
+                    width="560" height="95" alt="" /></a>
+            <a href="https://www.gametracker.com/server_info/91.202.247.219:27015/" target="_blank"><img
+                    src="https://cache.gametracker.com/server_info/91.202.247.219:27015/b_560_95_1.png" border="0"
+                    width="560" height="95" alt="" /></a>
+            <a href="https://www.gametracker.com/server_info/91.202.246.252:27015/" target="_blank"><img
+                    src="https://cache.gametracker.com/server_info/91.202.246.252:27015/b_560_95_1.png" border="0"
+                    width="560" height="95" alt="" /></a>
+
+        </div>
+    </div>
+</body>
+
+</html>
